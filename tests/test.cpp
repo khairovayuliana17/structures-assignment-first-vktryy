@@ -6,10 +6,10 @@
 
 #include "circle.h"
 
-static_assert(std::is_same_v<decltype(Circle::center), Point>, 
-    "Circle::center must be of type Point");
-static_assert(std::is_same_v<decltype(Circle::radius), double>, 
-    "Circle::radius must be of type double");
+static_assert(
+    std::is_same_v<decltype(Circle::center), Point>, "Circle::center must be of type Point");
+static_assert(
+    std::is_same_v<decltype(Circle::radius), double>, "Circle::radius must be of type double");
 
 TEST_CASE("Circle: Initialization with zeros by default") {
     Circle c;
